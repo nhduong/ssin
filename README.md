@@ -12,6 +12,16 @@ for f in *.tar; do
   (cd $d && tar xf ../$f && rm -r ../$f)
 done
 ```  
+- Train (tiny)  
+`sh tiny-imagenet-200-train.sh`
+```
+#!/bin/bash
+for d in tiny-imagenet-200/train/*/; do
+  for f in $d/images/*.JPEG; do
+    mv $f $d
+  done
+done
+```  
 - Val  
 `cd val`  
 `wget https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh`  
