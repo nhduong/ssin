@@ -25,7 +25,6 @@ for d in tiny-imagenet-200/train/*/; do
 done
 ```  
 - Val  
-`cd val`  
 `wget https://raw.githubusercontent.com/nhduong/ssin/master/scripts/valprep.sh`  
 `sh valprep.sh`  
 - Resizing images recursively based on minwidth and minheight  
