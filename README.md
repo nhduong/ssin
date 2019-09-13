@@ -1,6 +1,7 @@
 # dpp
 - Extract  
 `tar -xf file_name.tar -C /target/directory`  
+`unzip file.zip -d path`  
 - Train  
 `sh tar_extract_script.sh`  
 ```
