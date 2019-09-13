@@ -27,5 +27,6 @@ done
 - Val  
 `cd val`  
 `wget https://raw.githubusercontent.com/nhduong/ssin/master/scripts/valprep.sh`  
+`sh valprep.sh`  
 - Resizing images recursively based on minwidth and minheight  
 `find . -name '*.JPEG' -execdir sh -c "mogrify -resize '256x256^' *.JPEG" {} \;`
