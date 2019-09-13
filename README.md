@@ -3,6 +3,7 @@
 `tar -xf file_name.tar -C /target/directory`  
 `unzip file.zip -d path`  
 - Train  
+`wget https://raw.githubusercontent.com/nhduong/ssin/master/scripts/tar_extract_script.sh`  
 `sh tar_extract_script.sh`  
 ```
 #!/bin/bash
@@ -13,6 +14,7 @@ for f in *.tar; do
 done
 ```  
 - Train (tiny)  
+`wget https://raw.githubusercontent.com/nhduong/ssin/master/scripts/tiny-imagenet-200-train.sh`  
 `sh tiny-imagenet-200-train.sh`
 ```
 #!/bin/bash
@@ -24,6 +26,6 @@ done
 ```  
 - Val  
 `cd val`  
-`wget https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh`  
+`wget https://raw.githubusercontent.com/nhduong/ssin/master/scripts/valprep.sh`  
 - Resizing images recursively based on minwidth and minheight  
 `find . -name '*.JPEG' -execdir sh -c "mogrify -resize '256x256^' *.JPEG" {} \;`
